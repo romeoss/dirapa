@@ -1,0 +1,11 @@
+[Unit]
+Description=Runs dirapa.py
+
+[Service]
+#CHANGE THIS LINE TO YOUR USERNAME
+User=username
+Type=simple
+ExecStart=/usr/bin/python3.4 ~/.dirapa/dirapa.py
+
+[Install]
+WantedBy=dirapa.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs dirapa.service every hour
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=dirapa.target
+
+[Install]
+WantedBy=multi-user.target
